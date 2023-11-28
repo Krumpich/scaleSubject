@@ -1,11 +1,13 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class instantiate : MonoBehaviour
+public class instantiateScript : MonoBehaviour
 {
 
     public GameObject musicObject;
+    //static GameObject instantiatedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,7 @@ public class instantiate : MonoBehaviour
     {
         if (sceneChanger.played == false)
         {
-          Instantiate(musicObject);
+            Instantiate(musicObject);
         }
         
     }
